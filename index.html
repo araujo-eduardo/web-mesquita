@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 08 - 27/04/2022</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container__main {
+      /* Take the remaining height */
+      flex-grow: 1;
+
+      /* Layout the left sidebar, main content and right sidebar */
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container__left {
+      width: 25%;
+    }
+
+    .container__middle {
+      /* Take the remaining width */
+      flex-grow: 1;
+    }
+
+    .container__right {
+      width: 20%;
+    }
+
+    .header {
+      background: blue;
+      line-height: 50px;
+    }
+
+    .logo {
+      margin: 10px 50px 0px 10px;
+    }
+
+    .sidebar {
+      background-color: lightblue;
+      height: calc(80vh);
+    }
+
+    .ad-container {
+      background-color: lightsalmon;
+    }
+
+    .ad-item {
+      width: 100px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: 50px;
+    }
+
+    .footer {
+      flex: 1;
+      align-self: center;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .col {
+      flex-direction: row;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header flex" style="align-items: center;">
+      <a class="logo"><img src="img/logo.png" alt="logo">
+      </a>
+      <div>Projeto Web</div>
+    </header>
+    <main class="container__main">
+      <!-- Left sidebar -->
+      <aside class="container__left">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/contact.html">Contato</a></li>
+            <li><a href="/contact.html">Sobre nós</a></li>
+            <li><a href="/contact.html">Clientes</a></li>
+            <li><a href="/contact.html">Serviços</a></li>
+          </ul>
+        </div>
+
+      </aside>
+
+      <!-- Main content -->
+      <article class="container__middle">Conteúdo principal do site</article>
+
+      <!-- Right sidebar -->
+      <nav class="container__right">
+        <div class="ad-container">
+          <ul>
+            <div class="ad-item">
+              <li>Anúncio 1</li>
+            </div>
+
+            <li>Anúncio 2</li>
+            <li>Anúncio 3</li>
+            <li>Anúncio 4</li>
+            <li>Anúncio 5</li>
+            <li>Anúncio 6</li>
+          </ul>
+        </div>
+      </nav>
+    </main>
+    <footer class="footer">
+      Developed by Eduardo Araújo ✅
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
